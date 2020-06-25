@@ -5,6 +5,7 @@ import Modal from './modal/Modal'
 import SearchBoard from './SearchBoard/SearchBoard'
 import FavoritesBoard from './favoritesBoard/FavoritesBoard';
 import CategoryBoard from './categoryBoard/CategoryBoard';
+import Greeting from './greeting/Greeting';
 import { connect } from 'react-redux'
 import { Spring } from 'react-spring/renderprops'
 import { STOP_SEARCHING, GET_MORE_ITEMS } from '../../redux/types';
@@ -158,20 +159,7 @@ class Board extends React.Component{
                                     )
                                 })}
                             </div>
-                            :   <div className = "hellow-world"> 
-                                    <h1> Агрегатор бирж фрилансеров </h1> 
-                                    <p>HELLOW, WORLD! Друзья, спасибо, что пользуетесь этим инструментом!</p>
-                                    <p>Для начала работы:</p>
-                                    <ol>
-                                        <li>Выберите категорию;</li>
-                                        <li>Нажмите кнопку "Показать фриланс биржи" и выберите сделайте свой выбор;</li>
-                                        <li>Вы можете пользоваться поиском, но для его работы, нужно выполнить пункт 1 и 2;</li>
-                                        <li>Вы также можете добавлять заинтересовавшие Вас объявления в избранное.;</li>
-                                    </ol>    
-                                    <p>Этот ресурс разработан в качестве демонстрации моих навыков, но тем не менее он работает и может сослужить вам службу, если она связанна с фрилансом.</p>
-                                    <p>Если у Вас есть предложения для сотрудничества, то присылайте ваши предложения на адрес: xenonhammer46@gmail.com</p>
-                                    <p>Если Вы считаете, что были нарушены Ваши права, то пожалуйста, связжитись со мной!</p>
-                                </div> 
+                            : <Greeting />
                             }
 
                     </div>
