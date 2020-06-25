@@ -1,0 +1,47 @@
+.modal {
+  position: fixed;
+  z-index: 2;
+  top: 50px;
+  right: 20%;
+  left: 20%;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px 10px 20px 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+	border-radius: 7px;
+	box-shadow: 0 3px 60px 10px rgba(0, 0, 0, 0.55);
+  transition: all .25s ease;
+  overflow-x: auto;
+  .board .buttons{
+    padding-bottom: 20px;
+  }
+  .buttons{
+    .box{
+      height: 40px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.head-wrap{
+  display: flex;
+  justify-content: space-between;
+
+  .item-header{
+    display: inline-block;
+  }
+  .closeWindow{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+.item-desc{
+  padding: 0 20px;
+  max-height: 400px;
+  overflow-y: auto;
+
+
+}

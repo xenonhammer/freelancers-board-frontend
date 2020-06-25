@@ -1,0 +1,140 @@
+.main-sec {
+    position: relative;
+  }
+  
+.main-board {
+	max-width: 120px;
+	padding: 10px;
+	background-color: rgba(238, 238, 238, 0.7);
+	height: 100vh;
+	position: fixed;
+	overflow-y: auto;
+	overflow-x: hidden;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.main-logo .logo-title {
+	font-size: 27px;
+	font-family: roboto-example;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.4rem;
+	text-transform: uppercase;
+}
+
+.main-logo .logo-title span {
+	font-size: 14px;
+}
+
+.main-logo .h1 {
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	border: 1px solid #333333;
+	margin: 10px 0;
+}
+
+
+
+.main-board  .box:nth-child(1) {
+	margin-top: 20px;
+
+}
+
+.box:hover {
+	-webkit-box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+					box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+	cursor: pointer;
+}
+
+.box:active {
+	background-color: rgba(142, 213, 0, 0.55);
+	color: #ffffff;
+}
+
+.active-box {
+	color: #8FD500;
+	-webkit-box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+					box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+}
+a{
+	color: #333333;
+	text-decoration: none;
+}
+.sort-wrap{
+	display: inline-block;
+	width: 40%;
+}
+.sort-up, .sort-down{
+	display: block;
+	font-size: 10px;
+	color: #707070;
+}
+.sort-active{
+	color: #8FD500;
+}
+.favorite-btn{
+	position: relative;
+
+}
+.count-wrap{
+	border-radius: 100%;
+	background-color: #8FD500;
+	position: absolute;	
+	bottom: 4px;
+	left: 4px;
+	height: 30px;
+	width: 30px;
+}
+.favorite-btn .count-favorite{
+	text-align: center;
+	bottom: 6px;
+	left: 0px;
+	font-size: 18px;
+	color: #ffffff;
+	position: relative;
+}
+.warning{
+	animation: warning-animation 1s infinite alternate;
+	cursor: pointer;
+	z-index: 4;
+	position: fixed;
+
+	border: none;
+	font-size: 17px;
+	color: #ffffff;
+	background-color: #8ed500a2;
+	padding: 15px 30px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-animation: warning-animation 1s infinite alternate;
+}
+.warning-category{
+	top: 165px;
+	right: 120px;
+	animation: color-text 1s infinite alternate;
+	-webkit-animation: color-text 1s infinite alternate;
+}
+.warnin-reload{
+	top: 400px;
+	right: 120px;
+}
+@keyframes warning-animation{
+	from { right: 120px; }
+ 	to { right: 135px; }
+}
+@keyframes color-text{
+	0%  {color: #8FD500;}
+    100%    {color: #777777;}
+}

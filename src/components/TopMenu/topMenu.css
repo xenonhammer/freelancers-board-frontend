@@ -1,0 +1,74 @@
+.top-menu {
+    position: fixed;
+    top: 0;
+    width: 25%;
+    z-index:2;
+}
+
+.fl-boxs {
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.fl-boxs .box:first-child{
+    display: block;
+}
+.fl-boxs .box {
+    padding: 5px 10px;
+    width: initial;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 8px;
+    height: 35px;
+    outline: none;
+    box-shadow: 0 3px 10px 5px #0000004b;
+}
+.fl-boxs  .box:hover {
+	-webkit-box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+			box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+	cursor: pointer;
+}
+
+
+.active-menu {
+    background-color: #8FD500;
+    -webkit-box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+            box-shadow: 0 3px 6px 0px rgba(142, 213, 0, 0.55);
+    color: #ffffff;
+}
+.warning-tp{
+	animation: warning-tp-animation 1s infinite alternate;
+	cursor: pointer;
+	z-index: 4;
+	position: fixed;
+	top: 60px;
+	left: 15px;
+	border: none;
+    font-size: 17px;
+    font-weight: bold;
+	color: #ffffff;
+	background-color: #8ed500ed;
+	padding: 15px 30px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-webkit-animation: warning-tp-animation 1s infinite alternate;
+}
+.warning-top-menu{
+    animation: 1s top-menu-color-text infinite alternate;
+	animation: color-text 1s infinite alternate;
+	-webkit-animation: color-text 1s infinite alternate;
+}
+@keyframes warning-tp-animation{
+	from { top: 60px; }
+ 	to { top: 85px; }
+}
+@keyframes top-menu-color-text{
+	0%  {background-color: #8FD500;}
+    100%    {background-color: #ffffff;}
+}

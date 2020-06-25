@@ -1,0 +1,229 @@
+@media (max-width: 1199.98px) {
+    .main-board {
+        max-width: 120px;
+    }
+    .main-board .logo-title{
+      font-size: 21px;
+    }
+    .board .item {
+      margin: 5px;
+      margin-bottom: 20px;
+    }
+    .board .item .box {
+      min-width: 80px;
+    }
+    .board .buttons {
+      margin: 0 auto;
+      text-align: center;
+    }
+    .board .item-header {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 5px;
+      line-height: 1rem;
+    }
+    .board .item-scale-desc {
+      line-height: 1rem;
+      font-size: 12px;
+      padding: 0 10px;
+      height: 120px;
+      letter-spacing: 0.5px;
+    }
+    .top-menu{
+      width: 250px;
+    }
+    .up-button{
+      right: 12%
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .board .item {
+      margin: 5px;
+      margin-bottom: 20px;
+    }
+    .board .item .box {
+      min-width: 75px;
+    }
+    .top-menu{
+      width: 192px;
+    }
+    .up-button{
+      right: 15%
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .options-board{
+      right: 100px
+    }
+    .main-board {
+        width: 100px;
+      }
+    .box {
+        min-width: 80px;
+    }
+    .board {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .board .item {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 38%;
+          -ms-flex: 1 1 38%;
+              flex: 1 1 38%;
+      margin: 0 5px;
+      margin-bottom: 20px;
+    }
+    .board .item .box {
+      min-width: 80px;
+    }
+    .board .buttons {
+      margin: 0 auto;
+      text-align: center;
+    }
+    .board .item-header {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 5px;
+      line-height: 1rem;
+    }
+    .board .item-scale-desc {
+      line-height: 1rem;
+      font-size: 12px;
+      padding: 0 10px;
+      height: 120px;
+      letter-spacing: 0.5px;
+    }
+    .count-wrap{
+      height: 20px;
+      width: 20px;
+    }
+    .favorite-btn .count-favorite{
+      bottom: 13px;
+      font-size: 13px;
+    }
+    .top-menu{
+      width: 192px;
+    }
+    .up-button{
+      right: 100px
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .options-board{
+      right: 85px;
+      width: 72vw;
+      height: 70vh ;
+    }
+    .options-board .input{
+      margin: 15px;
+      width: 58vw;
+      padding: 10px;
+      text-align: center;
+    }
+    .options-board .box{
+      width: 60px;
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+    .modal{
+      top:5px;
+      left: 3%;
+      right: 3%;
+      max-height: 97vh;
+    }
+    .modal .item-desc{
+      height: 54vh
+    }
+    .modal .head-wrap{
+      min-height: 70px;
+    }
+    .main-board {
+      max-width: 85px;
+      
+    }
+    .main-logo .h1{
+      font-size: 12px;
+    }
+    .main-board .logo-title {
+      font-size: 19px;
+    }
+    .main-board .logo-title span {
+      font-size: 13px;
+    }
+    .main-menu .box {
+      min-width: 60px;
+    }
+    .fl-boxs .box {
+      margin: 5px;
+    }
+    .fl-boxs .box:first-child {
+      margin: 10px 10px 10px 5px;
+    }
+    .item {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 80%;
+          -ms-flex: 1 1 80%;
+              flex: 1 1 80%;
+    }
+    .buttons .box {
+      min-width: 80px;
+      margin: 5px;
+      padding: 5px 10px;
+    }
+    .board {
+      width: 75%;
+      margin-top: 15px;
+    }
+    .options-title{
+      text-align: center;
+      display: block;
+    }
+    .listing{
+      height: 58vh;
+    }
+    .favorite-item-btn.box{
+      width: 100%;
+    }
+    .warning{
+      animation: warning-animation 1s infinite alternate;
+      z-index: 4;
+      position: fixed;
+      right: 120px;
+      border: none;
+      font-size: 17px;
+      color: #ffffff;
+      background-color: #8ed500f6;
+      padding: 5px 10px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      -webkit-animation: warning-animation 1s infinite alternate;
+    }
+    .top-menu{
+      width: 200px;
+    }
+    .up-button{
+      right: 95px
+    }
+    @keyframes warning-animation{
+      from { right: 90px; }
+       to { right: 115px; }
+    }
+  }
+ 
+  @media (max-width: 991px) and (min-height: 320px){
+    .modal{
+      top:5px;
+      left: 3%;
+      right: 3%;
+      max-height: 97vh;
+    }
+    .modal .item-desc{
+      max-height: 60vh
+    }
+  }
