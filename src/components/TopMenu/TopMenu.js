@@ -52,9 +52,6 @@ class  TopMenu extends React.Component {
     componentDidUpdate(prevProps,prevState,snapshot){
        
         if(this.props.enableKwork  && snapshot.downloadingKwork){
-            if(!this.props.countOfItemsShow){
-                this.props.bord(SET_START_COUNT_ITEM)
-            }
             this.props.switchData(STOP_DOWNLOADING_KWORK)
             this.props.loading(IS_LOADING)
             let url = this.props.category.kworkHref
@@ -79,9 +76,7 @@ class  TopMenu extends React.Component {
                 else{
                     this.props.maindData(SET_DATA, newState)
                     this.props.loading(IS_NOT_LOADING)
-                    
-                } },   
-                (error) => console.log(error)
+                }}, (error) => console.log(error) 
             )
         }
         if(prevProps.enableKwork && !this.props.enableKwork ){
@@ -90,9 +85,6 @@ class  TopMenu extends React.Component {
 
 
         if(this.props.enableFreelanceRu  && snapshot.downloadingFreelanceRu){
-            if(!this.props.countOfItemsShow){
-                this.props.bord(SET_START_COUNT_ITEM)
-            }
             this.props.switchData(STOP_DOWNLOADING_FREELANCE_RU)
             this.props.loading(IS_LOADING)
             let url = this.props.category.freelance_ruHref

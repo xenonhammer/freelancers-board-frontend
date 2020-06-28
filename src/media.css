@@ -162,11 +162,11 @@
     .fl-boxs .box:first-child {
       margin: 10px 10px 10px 5px;
     }
-    .item {
+    .board .item {
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 80%;
-          -ms-flex: 1 1 80%;
-              flex: 1 1 80%;
+      -webkit-flex: 1 1 ;
+          -ms-flex: 1 1 ;
+              flex: 1 1 ;
     }
     .buttons .box {
       min-width: 80px;
@@ -216,14 +216,5 @@
     }
   }
  
-  @media (max-width: 991px) and (min-height: 320px){
-    .modal{
-      top:5px;
-      left: 3%;
-      right: 3%;
-      max-height: 97vh;
-    }
-    .modal .item-desc{
-      max-height: 60vh
-    }
-  }
+
+  

@@ -5,13 +5,11 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension'
-
 import './index.css';
 import App from './App/App';
 import './media.css'
 import allReducers from './redux/allReducers/allReducers';
-import {BrowserRouter as Router}  from 'react-router-dom';
-import {Switch, Route, Redirect} from 'react-router-dom'
+import {Switch, Route, BrowserRouter as Router} from 'react-router-dom'
 import Authenticated from './components/Auth/Authenticated';
 
 const store = createStore(allReducers, composeWithDevTools(applyMiddleware(thunk)));

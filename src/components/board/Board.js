@@ -123,7 +123,6 @@ class Board extends React.Component{
                     : null }
 
                     <div
-                        className = "items"
                         onScroll = {this.onScroll}
                     >
                         {this.props.loading 
