@@ -52,7 +52,7 @@ class  TopMenu extends React.Component {
     componentDidUpdate(prevProps,prevState,snapshot){
        
         if(this.props.enableKwork  && snapshot.downloadingKwork){
-            if(this.props.countOfItemsShow === 0){
+            if(!this.props.countOfItemsShow){
                 this.props.bord(SET_START_COUNT_ITEM)
             }
             this.props.switchData(STOP_DOWNLOADING_KWORK)
@@ -90,7 +90,7 @@ class  TopMenu extends React.Component {
 
 
         if(this.props.enableFreelanceRu  && snapshot.downloadingFreelanceRu){
-            if(this.props.countOfItemsShow === 0){
+            if(!this.props.countOfItemsShow){
                 this.props.bord(SET_START_COUNT_ITEM)
             }
             this.props.switchData(STOP_DOWNLOADING_FREELANCE_RU)

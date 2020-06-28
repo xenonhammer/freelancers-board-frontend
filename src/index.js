@@ -10,15 +10,26 @@ import './index.css';
 import App from './App/App';
 import './media.css'
 import allReducers from './redux/allReducers/allReducers';
-
+import {BrowserRouter as Router}  from 'react-router-dom';
+import {Switch, Route, Redirect} from 'react-router-dom'
+import Authenticated from './components/Auth/Authenticated';
 
 const store = createStore(allReducers, composeWithDevTools(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store = {store}>
-      <App />
-    </Provider>
+    <Router>
+      <Provider store = {store}>
+        <Switch>
+            <Route path="/home" exact>
+              <App />
+            </Route>
+            <Route path="/" exact>
+              <Authenticated />
+            </Route>
+        </Switch>  
+      </Provider>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -25,7 +25,12 @@ class Board extends React.Component{
     componentDidMount() {
         window.addEventListener('scroll', this.onScroll, true);
         
-    }  
+    }
+    componentDidUpdate(){
+
+        console.log('Object.keys(this.props.data).length', Object.keys(this.props.data).length)
+        console.log('this.props.countOfItemsShow', this.props.countOfItemsShow)
+    }
 
     startSearching(data){
         let searchKey = new RegExp(`(${this.props.searchValue})`, 'mgi')
@@ -43,7 +48,6 @@ class Board extends React.Component{
         document.documentElement.scrollTop = 0
     }
     onScroll () {
-        console.log(document.documentElement.scrollTop)
         if (document.documentElement.clientHeight + document.documentElement.scrollTop + 50 >= 
             Math.max(
                 document.documentElement.clientHeight, 
@@ -73,7 +77,6 @@ class Board extends React.Component{
             if(+e.price){
                 return {...e, price: +e.price}
             }else{
-                console.log(e.price)
                 return {...e}
             }
         })
@@ -105,6 +108,9 @@ class Board extends React.Component{
             }
         }
         
+
+
+
         return(
             <section className = "board-sec" >
                 <div  className="board">
