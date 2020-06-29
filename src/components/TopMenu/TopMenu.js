@@ -62,7 +62,7 @@ class  TopMenu extends React.Component {
             .then(response => {
                 if(response.length) return false
                 let modResponse = {...response.kwork}
-                let len = Object.keys(this.props.data).length === 0 ? 0 : Object.keys(this.props.data).length
+                let len = !Object.keys(this.props.data).length ? 0 : Object.keys(this.props.data).length
                 let obj = {};
                 for(let key in modResponse){
                     let index = len + +key

@@ -19,10 +19,10 @@ ReactDOM.render(
     <Router>
       <Provider store = {store}>
         <Switch>
-            <Route path="/home" exact>
+            <Route path="/" exact>
               <App />
             </Route>
-            <Route path="/" exact>
+            <Route path="/home" exact>
               <Authenticated />
             </Route>
         </Switch>  
